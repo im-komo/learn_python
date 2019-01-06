@@ -1,13 +1,18 @@
 #!/usr/bin/python3
 
-#multiline statement
+#Use Quotation
 
-item_one = "One "
-item_two = "Two "
-item_three = "Three. "
+word = 'word'
+sentence = "This is a sentence."
+paragraph = """This is a paragraph. It is
+made up of multiple lines and sentences."""
 
-total = item_one + \
-item_two + \
-	item_three 
+"""
+print(word)
+print(sentence)
+print(paragraph)
+"""
 
-print (total)
+print(word)
+print(sentence)
+print(paragraph)
