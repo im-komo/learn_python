@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
-#User Input Syntax
+counter = 100		# An integer assingment
+miles = 1000.0		# A floating point
+name = "John"			# A string
 
-value = input("\n\nPress the enter any Value : ")
+print (counter)
+print (miles)
+print (name)
 
-print (value)
