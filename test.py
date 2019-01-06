@@ -1,42 +1,24 @@
 #!/usr/bin/python3
+import sys
+print ("\n====================")
+print ("Iterator and Generator")
+print ("====================\n")
 
 print ("\n===============")
-print ("Control Statements")
+print ("Iterator Loop")
 print ("===============\n")
 
-print ("\n===============")
-print ("Break Statements")
-print ("===============\n")
+list = [1,2,3,4]
+it = iter(list) # this builds an iterator object
 
+for x in it:
+   print (x, end=" ")
 
-for letter in 'Python':     # First Example
-   if letter == 'h':
-      break
-   print ('Current Letter :', letter)
-  
-var = 10                    # Second Example
-while var > 0:              
-   print ('Current variable value :', var)
-   var = var -1
-   if var == 5:
-      break
+print("\n\nusing next function\n")
 
-print ("\n=================")
-print ("Continue Statements")
-print ("=================\n")
-
-for letter in 'Python':     # First Example
-   if letter == 'h':
-      continue
-   print ('Current Letter :', letter)
-
-
-print ("\n=================")
-print ("Pass Statements")
-print ("=================\n")
-
-for letter in 'Python': 
-   if letter == 'h':
-      pass
-      print ('This is pass block')
-   print ('Current Letter :', letter)
+it = iter(list) # this builds an iterator object
+while True:
+   try:
+      print (next(it))
+   except StopIteration:
+      sys.exit() #you have to import sys module for this
