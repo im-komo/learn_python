@@ -9,3 +9,7 @@ print (tuple[1:3])     	# Prints elements starting from 2nd till 3rd
 print (tuple[2:])      	# Prints elements starting from 3rd element
 print (tinytuple * 2)  	# Prints list two times
 print (tuple + tinytuple) # Prints concatenated lists
+'''
+tuple[2] = 1000    # Invalid syntax with tuple
+list[2] = 1000     # Valid syntax with list
+'''
