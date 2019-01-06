@@ -1,18 +1,7 @@
 #!/usr/bin/python3
 
-#Use Quotation
+#User Input Syntax
 
-word = 'word'
-sentence = "This is a sentence."
-paragraph = """This is a paragraph. It is
-made up of multiple lines and sentences."""
+value = input("\n\nPress the enter any Value : ")
 
-"""
-print(word)
-print(sentence)
-print(paragraph)
-"""
-
-print(word)
-print(sentence)
-print(paragraph)
+print (value)
