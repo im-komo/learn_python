@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 
-a = 10
+#multiline statement
 
-if a > 10:
-    print ("Value of a : " + str(a))
-elif a < 5:
-    print ("Value of a : " + str(a))
-else:
-    print ("Value of a : " + str(a))
+item_one = "One "
+item_two = "Two "
+item_three = "Three. "
+
+total = item_one + \
+item_two + \
+	item_three 
+
+print (total)
