@@ -8,3 +8,8 @@ print (str[2:5])     # Prints characters starting from 3rd to 5th
 print (str[2:])      # Prints string starting from 3rd character
 print (str * 2)      # Prints string two times
 print (str + "TEST") # Prints concatenated string
+
+if False:
+    print ("Condition is True")
+else:
+    print ("Condition is False")
