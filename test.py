@@ -1,59 +1,42 @@
 #!/usr/bin/python3
 
 print ("\n===============")
-print ("   Loops")
+print ("Control Statements")
 print ("===============\n")
-
 
 print ("\n===============")
-print ("while loops")
-print ("===============\n")
-
-count = 0
-while count < 5:
-   print ('The value of count is :', count)
-   count+=1
-print ("While loop closed")
-
-print ("\n===============")
-print ("while loops with else")
+print ("Break Statements")
 print ("===============\n")
 
 
-count = 0
-while count < 5:
-	print ('The value of count is :', count)
-	count+=1
-else:
-	print ("While loop closed")
-
-print ("No Condition here")
-
-
-print ("\n===============")
-print ("for loops")
-print ("===============\n")
-
-
-for val in list(range(5)):
-   print ('The value of list item is :', val)   
-print ("for loop closed")
-
-print ("\n===================")
-print ("for loops using index")
-print ("===================\n")
-
-fruits = ['banana', 'apple',  'mango']
-for index in range(len(fruits)):
-   print ('Current fruit :', fruits[index])
-
-print ("\n===================")
-print ("for loops using else")
-print ("===================\n")
-numbers = [11,33,55,39,55,75,37,21,23,41,13]
-for num in numbers:
-   if num%2 == 0:
-      print ('the list contains an even number')
+for letter in 'Python':     # First Example
+   if letter == 'h':
       break
-else:
-   print ('the list {} doesnot contain even number'.format(numbers))
+   print ('Current Letter :', letter)
+  
+var = 10                    # Second Example
+while var > 0:              
+   print ('Current variable value :', var)
+   var = var -1
+   if var == 5:
+      break
+
+print ("\n=================")
+print ("Continue Statements")
+print ("=================\n")
+
+for letter in 'Python':     # First Example
+   if letter == 'h':
+      continue
+   print ('Current Letter :', letter)
+
+
+print ("\n=================")
+print ("Pass Statements")
+print ("=================\n")
+
+for letter in 'Python': 
+   if letter == 'h':
+      pass
+      print ('This is pass block')
+   print ('Current Letter :', letter)
