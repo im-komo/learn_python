@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 
-counter = 100		# An integer assingment
-miles = 1000.0		# A floating point
-name = "John"			# A string
+a = b = c = 1
 
-print (counter)
-print (miles)
-print (name)
+print (a)
+print (b)
+print (c)
 
+a , b , c = 1 , 2 , "Jhon"
+
+print (a)
+print (b)
+print (c)
